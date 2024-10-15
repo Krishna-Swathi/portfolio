@@ -12,9 +12,8 @@ header {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: left;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -23,6 +22,13 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
 }
 
 header nav ul li {
@@ -32,20 +38,24 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #007BFF;
+    border-radius: 5px;
 }
 
 .profile-container {
     display: flex;
     align-items: center;
+    margin-top: 80px; /* Adjust for navigation height */
 }
 
 .profile-picture {
     width: 150px;
-    border-radius: 50%;
+    height: 150px;
+    border-radius: 5px; /* Square image with slight corner rounding */
     margin-right: 20px;
 }
 
@@ -55,7 +65,7 @@ h1, h2, h3 {
 
 section {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 20px;
 }
 
