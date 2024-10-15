@@ -12,17 +12,19 @@
     <header>
         <nav>
             <ul class="navbar">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Profile Section with Picture on the Left -->
-    <section class="profile-section">
+    <section id="about" class="profile-section">
         <div class="profile-container">
             <img src="profile-picture.jpg" alt="Your Picture" class="profile-picture">
             <div class="profile-info">
@@ -32,27 +34,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>SQL, Python, Java, R</li>
-            <li>Data Analytics, Power BI, Tableau</li>
-            <li>Big Data: Spark, Hadoop, Snowflake</li>
-            <li>Cloud: AWS, Azure, Google Cloud</li>
-        </ul>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h3>Experience</h3>
-        <ul>
-            <li>Data Engineer, Capgemini Technological Services (2021-2023)</li>
-            <li>Software Engineer Intern, Engineers Hub (2020-2021)</li>
-            <li>Analytics Intern, Capgemini (2021)</li>
-        </ul>
-    </section>
-
     <!-- Education Section -->
     <section id="education">
         <h3>Education</h3>
@@ -60,6 +41,53 @@
             <li>Bachelor of Technology in Civil Engineering</li>
             <li>Master's in Information Systems (Ongoing)</li>
         </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li><img src="python-logo.png" alt="Python Logo"> Python</li>
+                    <li><img src="sql-logo.png" alt="SQL Logo"> SQL</li>
+                    <!-- Add more logos and skills here -->
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Visualization Tools</h4>
+                <ul>
+                    <li><img src="powerbi-logo.png" alt="Power BI Logo"> Power BI</li>
+                    <li><img src="tableau-logo.png" alt="Tableau Logo"> Tableau</li>
+                    <!-- Add more logos and tools here -->
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Other Tools</h4>
+                <ul>
+                    <li><img src="azure-logo.png" alt="Azure Logo"> Azure</li>
+                    <li><img src="aws-logo.png" alt="AWS Logo"> AWS</li>
+                    <!-- Add more logos and tools here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h3>Experience</h3>
+        <div class="experience-container">
+            <div class="experience-item">
+                <img src="capgemini-logo.png" alt="Capgemini Logo">
+                <p>Data Engineer, Capgemini Technological Services (2021-2023)</p>
+            </div>
+            <div class="experience-item">
+                <img src="engineershub-logo.png" alt="Engineers Hub Logo">
+                <p>Software Engineer Intern, Engineers Hub (2020-2021)</p>
+            </div>
+            <!-- Add more experiences with logos here -->
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -82,6 +110,13 @@
         <h3>Resume</h3>
         <p>Click below to download my resume:</p>
         <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
     </section>
 
     <footer>
