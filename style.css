@@ -53,16 +53,17 @@ header nav ul li a:hover {
 
 /* Profile Section Styling */
 .profile-section {
-    padding: 50px 0;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Make sure the section takes the full width of the screen */
+    padding: 0; /* Remove padding */
+    background-color: #e0f7f4; /* Sea green light shade */
+    margin: 0; /* Remove margins */
 }
 
 .profile-container {
     display: flex;
     align-items: center;
     justify-content: center; /* Center align the profile picture and text */
+    padding: 20px; /* Keep some padding inside for better spacing */
 }
 
 .profile-picture {
@@ -83,6 +84,7 @@ header nav ul li a:hover {
     font-size: 1.2em;
     color: #555;
 }
+
 
 /* Section Styling */
 section {
@@ -243,4 +245,43 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+/* Popup container (hidden by default) */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
