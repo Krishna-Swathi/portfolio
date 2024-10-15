@@ -94,12 +94,12 @@ section {
 .education-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Add some space between the two items */
-    flex-wrap: wrap; /* Ensure it wraps properly on smaller screens */
+    gap: 20px; /* Space between the two items */
+    flex-wrap: nowrap; /* Ensure the items stay side by side */
 }
 
 .education-item {
-    width: 45%; /* Each education item takes up 45% of the available width */
+    width: 48%; /* Ensure each education item takes up 48% of the available width */
     text-align: center;
     background-color: #fff; /* White background for better readability */
     padding: 20px;
