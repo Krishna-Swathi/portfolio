@@ -7,6 +7,11 @@ body {
     color: #333;
     line-height: 1.6;
 }
+body, .container {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the entire page takes up the full width */
+}
 
 /* Sticky Navigation Bar */
 header {
@@ -81,11 +86,10 @@ header nav ul li a:hover {
 
 /* Section Styling */
 section {
-    max-width: 1200px;
-    margin: 30px auto;
+    width: 100%; /* Make the sections take up full width */
+    margin: 30px 0; /* Remove left and right margin */
     padding: 20px;
     background-color: #fff;
-    scroll-margin-top: 80px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
