@@ -25,37 +25,66 @@
 
     <!-- Profile Section with Picture on the Left -->
     <section id="about" class="profile-section">
-        <div class="profile-container">
-            <img src="profile-picture.jpeg" alt="Your Picture" class="profile-picture">
-            <div class="profile-info">
-                <h1>KRISHNA SWATHI PEETHA</h1>
-                <p>Data Analyst</p>
-            </div>
+    <div class="profile-container">
+        <img src="profile-picture.jpg" alt="Your Picture" class="profile-picture">
+        <div class="profile-info">
+            <h1>KRISHNA SWATHI PEETHA</h1>
+            <p>Data Analyst</p>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="education">
     <h3>Education</h3>
     <div class="education-container">
-        <!-- Education 1 -->
-        <div class="education-item">
-            <img src="utah-university.jpeg" alt="University of Utah">
+        <!-- Education 1: University of Utah -->
+        <div class="education-item" onclick="openPopup('utah-popup')">
+            <img src="utah-university.jpg" alt="University of Utah">
             <h4>David Eccles School of Business, University of Utah</h4>
             <p>Salt Lake City, UT</p>
             <p>Masters in Information Systems</p>
             <p>Aug 2023 - Dec 2024 (Expected)</p>
         </div>
 
-        <!-- Education 2 -->
-        <div class="education-item">
-            <img src="bvrit-hyderabad.jpeg" alt="BVRIT Hyderabad">
+        <!-- Education 2: BVRIT Hyderabad -->
+        <div class="education-item" onclick="openPopup('bvrit-popup')">
+            <img src="bvrit-hyderabad.jpg" alt="BVRIT Hyderabad">
             <h4>BVRIT Hyderabad, JNTU University</h4>
             <p>Hyderabad, India</p>
             <p>Bachelors in Electronics and Communication Engineering</p>
             <p>July 2017 - August 2021</p>
         </div>
     </div>
+
+    <!-- Popup for University of Utah -->
+    <div id="utah-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('utah-popup')">&times;</span>
+            <h4>University of Utah - Relevant Courses</h4>
+            <ul>
+                <li>Data Management</li>
+                <li>Advanced Analytics</li>
+                <li>Data Visualization</li>
+                <!-- Add more courses here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Popup for BVRIT Hyderabad -->
+    <div id="bvrit-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('bvrit-popup')">&times;</span>
+            <h4>BVRIT Hyderabad - Relevant Courses</h4>
+            <ul>
+                <li>Digital Signal Processing</li>
+                <li>Embedded Systems</li>
+                <li>VLSI Design</li>
+                <!-- Add more courses here -->
+            </ul>
+        </div>
+    </div>
 </section>
+
 
     <!-- Skills Section -->
     <section id="skills">
