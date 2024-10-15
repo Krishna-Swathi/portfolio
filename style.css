@@ -8,10 +8,13 @@ body {
     line-height: 1.6;
 }
 
-/* Full-Width Navigation Bar Styling */
+/* Sticky Navigation Bar */
 header {
     width: 100%;
     background-color: #333;
+    position: sticky; /* Make the navbar sticky */
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
@@ -54,6 +57,7 @@ header nav ul li a:hover {
 .profile-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center align the profile picture and text */
 }
 
 .profile-picture {
@@ -61,7 +65,7 @@ header nav ul li a:hover {
     height: 150px;
     border-radius: 5px; /* Square shape */
     margin-right: 30px;
-    border: none; /* Remove blue circle */
+    border: none;
 }
 
 .profile-info h1 {
