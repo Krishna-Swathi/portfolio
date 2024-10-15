@@ -4,79 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of [Your Name]">
-    <title>[Krishna Swathi Peetha] Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-            background-color: #333;
-            color: white;
-        }
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-picture {
-            width: 200px;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
-        h2, h3 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-        }
-    </style>
+    <title>[Your Name] Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>[Krishna Swathi Peetha]</h1>
-        <p>Data Engineer | Analytics | AI Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <img src="profile-picture.jpg" alt="Your Picture" class="profile-picture">
+            <h1>[Your Name]</h1>
+            <p>Data Engineer | Analytics | AI Enthusiast</p>
+        </div>
     </header>
 
-    <section>
+    <section id="about">
         <h2>About Me</h2>
-        <img src="profile-picture.jpeg" alt="Your Picture" class="profile-picture">
         <p>I am a data engineer with a strong background in SQL, Python, and analytics. Currently pursuing a Master's in Information Systems with a focus on data analysis. My experience includes working with fintech clients, handling large-scale data processing, and developing innovative solutions.</p>
     </section>
 
-    <section>
+    <section id="skills">
         <h3>Skills</h3>
         <ul>
             <li>SQL, Python, Java, R</li>
@@ -86,7 +40,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="experience">
         <h3>Experience</h3>
         <ul>
             <li>Data Engineer, Capgemini Technological Services (2021-2023)</li>
@@ -95,16 +49,24 @@
         </ul>
     </section>
 
-    <section>
+    <section id="projects">
         <h3>Projects</h3>
-        <ul>
-            <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1: Financial Data Analysis</a></li>
-            <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2: Wide World Importers Data Warehouse</a></li>
-        </ul>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1 Image">
+                <a href="https://github.com/yourusername/project1" target="_blank">Project 1: Financial Data Analysis</a>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2 Image">
+                <a href="https://github.com/yourusername/project2" target="_blank">Project 2: Wide World Importers Data Warehouse</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h3>Download My Resume</h3>
+    <section id="resume">
+        <h3>Resume</h3>
+        <p>Click below to view my resume:</p>
+        <iframe src="resume.pdf" class="resume-frame"></iframe>
         <a href="resume.pdf" class="btn" download>Download Resume</a>
     </section>
 
