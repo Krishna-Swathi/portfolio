@@ -3,7 +3,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f9fb;
+    background-color: #e0f7f4;
     color: #333;
     line-height: 1.6;
 }
@@ -49,7 +49,7 @@ header nav ul li a:hover {
 /* Profile Section Styling */
 .profile-section {
     padding: 50px 0;
-    background-color: #e0f7f4; /* Light sea green shade */
+    background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
 }
