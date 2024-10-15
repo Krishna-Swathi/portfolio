@@ -90,6 +90,43 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Education Section */
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add some space between the two items */
+    flex-wrap: wrap; /* Ensure it wraps properly on smaller screens */
+}
+
+.education-item {
+    width: 45%; /* Each education item takes up 45% of the available width */
+    text-align: center;
+    background-color: #fff; /* White background for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.education-item img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Slight rounding of the images */
+    margin-bottom: 15px;
+}
+
+.education-item h4 {
+    font-size: 1.2em;
+    color: #007BFF; /* University name color */
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+
 /* Experience Section */
 .experience-container {
     display: flex;
