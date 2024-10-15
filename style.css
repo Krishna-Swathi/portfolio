@@ -12,7 +12,6 @@ body {
 header {
     width: 100%;
     background-color: #333;
-    position: relative; /* Ensure it's properly positioned */
 }
 
 header nav ul {
@@ -23,12 +22,12 @@ header nav ul {
     justify-content: center;
     background-color: #333;
     padding: 15px 0;
-    width: 100%; /* Ensure the navigation bar spans the entire width */
-    box-sizing: border-box; /* Prevent any padding or margin from affecting width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header nav ul li {
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 header nav ul li a {
@@ -47,8 +46,8 @@ header nav ul li a:hover {
 /* Profile Section Styling */
 .profile-section {
     padding: 50px 0;
-    background-color: #fff;
-    max-width: 1000px;
+    background-color: #e0f7f4; /* Light sea green shade */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -60,9 +59,9 @@ header nav ul li a:hover {
 .profile-picture {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 5px; /* Square shape */
     margin-right: 30px;
-    border: 3px solid #007BFF;
+    border: none; /* Remove blue circle */
 }
 
 .profile-info h1 {
@@ -78,7 +77,7 @@ header nav ul li a:hover {
 
 /* Section Styling */
 section {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
@@ -86,10 +85,54 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
-    color: #333;
-    font-size: 1.8em;
+/* Experience Section */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience-item {
+    width: 45%;
+    text-align: left;
     margin-bottom: 20px;
+}
+
+.experience-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-category {
+    width: 30%;
+}
+
+.skill-category h4 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-category ul li img {
+    width: 30px;
+    margin-right: 10px;
 }
 
 /* Projects Section */
@@ -138,7 +181,7 @@ h3 {
     background-color: #0056b3;
 }
 
-/* Footer Styling */
+/* Footer and Contact Styling */
 footer {
     text-align: center;
     padding: 20px;
