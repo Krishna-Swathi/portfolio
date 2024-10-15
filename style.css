@@ -12,6 +12,7 @@ body {
 header {
     width: 100%;
     background-color: #333;
+    position: relative; /* Ensure it's properly positioned */
 }
 
 header nav ul {
@@ -22,10 +23,12 @@ header nav ul {
     justify-content: center;
     background-color: #333;
     padding: 15px 0;
+    width: 100%; /* Ensure the navigation bar spans the entire width */
+    box-sizing: border-box; /* Prevent any padding or margin from affecting width */
 }
 
 header nav ul li {
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
