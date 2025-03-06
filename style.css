@@ -56,19 +56,26 @@ header nav ul li a:hover {
 }
 
 /* Profile Section Styling */
-.profile-section {
-    width: 90%; 
-    max-width: 1200px;
+.about-section {
+    width: 90%;
+    max-width: 1100px;
     margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.profile-container {
+.about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     max-width: 90%;
     margin: auto;
     padding: 30px;
+    text-align: left;
 }
 
 /* Section Styling */
@@ -301,10 +308,8 @@ a:hover {
 }
 
 .about-description {
-    max-width: 70%; 
-    margin: 20px auto; 
-    text-align: center;
-    font-size: 1.2em; 
+    max-width: 70%;
+    font-size: 1.2em;
     color: #444;
     line-height: 1.6;
 }
@@ -332,13 +337,21 @@ a:hover {
 .profile-info h2 {
     font-size: 2em; 
     font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center; 
+    margin-bottom: 20px; 
 }
+
 
 .profile-info p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #444;
+}
+
+.about-image img {
+    width: 150px; 
+    height: auto;
+    border-radius: 8px;
 }
 
 
