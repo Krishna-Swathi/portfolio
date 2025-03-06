@@ -318,7 +318,7 @@ a:hover {
 /* About Me Section - Image and Text Layout */
 .profile-image {
     flex: 1;
-    max-width: 20%; 
+    max-width: 18%; 
     margin-right: 40px; 
 }
 
@@ -332,6 +332,9 @@ a:hover {
 .profile-info {
     flex: 3;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profile-info h2 {
