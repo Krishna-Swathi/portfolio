@@ -373,4 +373,6 @@ a:hover {
     color: #444;
     text-align: justify;
 
-
+section {
+    scroll-margin-top: 80px; 
+}
