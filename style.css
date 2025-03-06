@@ -7,7 +7,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
 body, .container {
     margin: 0 auto;
     padding: 0;
@@ -17,14 +16,15 @@ body, .container {
 
 /* Sticky Navigation Bar */
 header {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     background-color: #333;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
 
 header nav ul {
     list-style-type: none;
@@ -35,7 +35,7 @@ header nav ul {
     background-color: #333;
     width: 100%;
     max-width: 1200px;
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 
 header nav ul li {
@@ -55,16 +55,8 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Global Section Title Styling */
-h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Section Styling */
-section {
+/* Profile Section Styling */
+.about-section {
     width: 90%;
     max-width: 1100px;
     margin: 30px auto;
@@ -72,15 +64,6 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Fixes navigation header overlap when clicking links */
-html {
-    scroll-padding-top: 100px;
-}
-
-/* About Section */
-.about-section {
     text-align: center;
 }
 
@@ -95,19 +78,30 @@ html {
 }
 
 .about-container .profile-info {
-    text-align: justify;
+    text-align: justify; 
+}
+
+/* Section Styling */
+section {
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Education Section */
 .education-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px; /* Space between the two items */
     flex-wrap: nowrap;
 }
 
 .education-item {
-    width: 46%;
+    width: 46%; /* Slightly reduce size of education items */
     text-align: center;
     background-color: #fff;
     padding: 20px;
@@ -115,16 +109,39 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.education-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.education-item h4 {
+    font-size: 1.2em;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
 /* Experience Section */
+
+
+/* Experience Container */
 .experience-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
     gap: 20px;
     justify-content: center;
     max-width: 90%;
     margin: auto;
 }
 
+/* Experience Item (Rectangle Box) */
 .experience-item {
     display: flex;
     align-items: center;
@@ -134,14 +151,16 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Experience Logo (Small Square Image) */
 .experience-logo {
-    width: 70px;
+    width: 70px; /* Small square size */
     height: 70px;
     border-radius: 8px;
     margin-right: 20px;
     object-fit: contain;
 }
 
+/* Experience Info (Text Section) */
 .experience-info h3 {
     margin: 0;
     font-size: 1.2em;
@@ -154,7 +173,17 @@ html {
     color: #555;
 }
 
+
 /* Skills Section */
+
+
+.skills-section {
+    text-align: center;
+}
+
+
+
+/* Skills Container - Adjusts the alignment */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -164,31 +193,39 @@ html {
     margin: auto;
 }
 
+/* Individual skill box */
 .skill-box {
     display: flex;
     align-items: center;
-    width: 180px;
+    width: 180px; /* Rectangle shape */
     padding: 10px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: flex-start; /* Align items from the start */
+    gap: 10px; /* Space between icon and text */
 }
 
+/* Small square image */
 .skill-box img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    width: 40px;  /* Small square */
+    height: 40px; /* Square shape */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
+/* Skill Text */
 .skill-box span {
     font-size: 1em;
     font-weight: bold;
     color: #333;
 }
 
+
+
+
 /* Projects and Case Studies Section */
+
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -207,12 +244,20 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    height: 100%;
+    height: 100%; 
     min-height: 500px;
     position: relative;
 }
+
+.project-item .more-info {
+    margin-top: auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .project-item img {
     width: 100%;
@@ -225,16 +270,17 @@ html {
     font-size: 1.2em;
     font-weight: bold;
     color: #007BFF;
-    text-align: justify;
+    text-align: justify; /* Justifies project title */
     width: 100%;
 }
 
-/* Fixes More Info Button alignment */
+/* More Info Button */
 .project-item .more-info {
-    margin-top: auto;
-    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-top: auto; 
 }
 
 .project-item .more-info button {
@@ -251,6 +297,7 @@ html {
 .project-item .more-info button:hover {
     background-color: #0056b3;
 }
+
 
 /* Resume Button Styling */
 .btn {
@@ -270,14 +317,14 @@ html {
 
 /* Footer and Contact Styling */
 footer {
-    width: 90%;
+    width: 90%; 
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto; 
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 
 a {
@@ -289,7 +336,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Popup Styling */
+/* Popup container (hidden by default) */
 .popup {
     display: none;
     position: fixed;
@@ -298,9 +345,10 @@ a:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
 }
 
+/* Popup content */
 .popup-content {
     background-color: #fff;
     margin: 15% auto;
@@ -324,4 +372,75 @@ a:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.home-section {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.home-container h1 {
+    font-size: 3em; 
+    font-weight: bold;
+    color: white;
+}
+
+.home-container .highlight {
+    color: #4A90E2; 
+}
+
+.job-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-description {
+    max-width: 70%;
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* About Me Section - Image and Text Layout */
+.profile-image {
+    flex: 1;
+    max-width: 18%; 
+    margin-right: 40px; 
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.profile-info {
+    flex: 3;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.profile-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+
+section {
+    padding-top: 120px;
+    margin-top: -80px;
 }
