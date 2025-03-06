@@ -296,7 +296,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('pictures/background-image-home.jpg') center/cover no-repeat; 
+    background: linear-gradient(to right, #4A90E2, #60c5fc); 
     color: white;
 }
 
