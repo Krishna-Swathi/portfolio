@@ -410,7 +410,7 @@ a:hover {
     font-size: 1.2em;
     color: #444;
     line-height: 1.6;
-    justify-content: justify;
+    text-align: justify;
 }
 
 
@@ -433,7 +433,7 @@ a:hover {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: justity;
+    justify-content: center;
 }
 
 .profile-info h2 {
