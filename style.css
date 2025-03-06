@@ -146,44 +146,54 @@ section {
 
 /* Skills Section */
 
+
+.skills-section {
+    text-align: center;
+}
+
 .skills-section h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-
+/* Skills Container - Adjusts the alignment */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensures 4 items per row */
-    gap: 20px; /* Space between skill items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     max-width: 90%;
     margin: auto;
-    justify-items: center;
 }
 
-.skill-item {
+/* Individual skill box */
+.skill-box {
     display: flex;
     align-items: center;
-    width: 220px; /* Fixed width for uniform size */
+    width: 180px; /* Rectangle shape */
     padding: 10px;
     background: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    gap: 10px; /* Space between image and text */
+    justify-content: flex-start; /* Align items from the start */
+    gap: 10px; /* Space between icon and text */
 }
 
-.skill-item img {
-    width: 40px; /* Small square icon on the left */
-    height: auto;
+/* Small square image */
+.skill-box img {
+    width: 40px;  /* Small square */
+    height: 40px; /* Square shape */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
-.skill-item span {
+/* Skill Text */
+.skill-box span {
     font-size: 1em;
     font-weight: bold;
     color: #333;
 }
+
 
 
 
