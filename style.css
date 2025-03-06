@@ -16,23 +16,27 @@ body, .container {
 
 /* Sticky Navigation Bar */
 header {
-    width: 100%;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     background-color: #333;
-    position: sticky; /* Make the navbar sticky */
+    position: sticky;
     top: 0;
     z-index: 1000;
+    border-radius: 8px; 
 }
+
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     background-color: #333;
-    padding: 15px 0;
     width: 100%;
-    box-sizing: border-box;
+    max-width: 1200px;
+    border-radius: 8px; 
 }
 
 header nav ul li {
@@ -230,11 +234,14 @@ section {
 
 /* Footer and Contact Styling */
 footer {
+    width: 80%; 
+    max-width: 1200px;
+    margin: 20px auto; 
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-top: 20px;
+    border-radius: 8px; 
 }
 
 a {
