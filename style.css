@@ -296,13 +296,14 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to right, #4A90E2, #60c5fc); 
+    background-color: #333;
     color: white;
 }
 
 .home-container h1 {
     font-size: 3em; 
     font-weight: bold;
+    color: white;
 }
 
 .home-container .highlight {
