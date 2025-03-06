@@ -23,7 +23,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-radius: 8px; 
 }
 
 
@@ -58,9 +57,9 @@ header nav ul li a:hover {
 
 /* Profile Section Styling */
 .profile-section {
-    width: 100%;
-    background-color: #fff; /* White background for About Me */
-    margin: 0;
+    width: 80%; 
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
 .profile-container {
