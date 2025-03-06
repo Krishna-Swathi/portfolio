@@ -10,13 +10,13 @@ body {
 body, .container {
     margin: 0 auto;
     padding: 0;
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
 }
 
 /* Sticky Navigation Bar */
 header {
-    width: 80%; 
+    width: 85%; 
     max-width: 1200px; 
     margin: 0 auto; 
     background-color: #333;
@@ -57,7 +57,7 @@ header nav ul li a:hover {
 
 /* Profile Section Styling */
 .profile-section {
-    width: 80%; 
+    width: 85%; 
     max-width: 1200px;
     margin: 30px auto;
 }
@@ -90,7 +90,7 @@ header nav ul li a:hover {
 
 /* Section Styling */
 section {
-    width: 80%; 
+    width: 85%; 
     max-width: 1100px; 
     margin: 30px auto; 
     padding: 20px;
@@ -233,7 +233,7 @@ section {
 
 /* Footer and Contact Styling */
 footer {
-    width: 80%; 
+    width: 85%; 
     max-width: 1200px;
     margin: 20px auto; 
     text-align: center;
