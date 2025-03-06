@@ -63,29 +63,13 @@ header nav ul li a:hover {
 }
 
 .profile-container {
-    text-align: center; 
-    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
 }
-.profile-picture {
-    width: 180px; /* Slightly increase profile picture size */
-    height: 180px;
-    border-radius: 5px;
-    margin-right: 30px;
-    border: none;
-}
-
-.profile-info h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #333;
-}
-
-.profile-info .job-title {
-    font-size: 1.6em; 
-    font-weight: bold; 
-    margin-top: -5px; 
-}
-
 
 /* Section Styling */
 section {
@@ -324,4 +308,37 @@ a:hover {
     color: #444;
     line-height: 1.6;
 }
+
+
+/* About Me Section - Image and Text Layout */
+.profile-image {
+    flex: 1;
+    max-width: 25%; /* Image takes 1/4th space */
+    margin-right: 40px; /* Space between image and text */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.profile-info {
+    flex: 3;
+    text-align: justify;
+}
+
+.profile-info h2 {
+    font-size: 2em; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+
 
