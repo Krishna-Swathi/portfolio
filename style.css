@@ -405,5 +405,6 @@ a:hover {
     text-align: justify;
 
 section {
-    scroll-margin-top: 80px; 
+    padding-top: 120px;
+    margin-top: -80px;
 }
