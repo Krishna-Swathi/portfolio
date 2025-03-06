@@ -63,12 +63,9 @@ header nav ul li a:hover {
 }
 
 .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px; /* Increase padding */
+    text-align: center; 
+    padding: 40px;
 }
-
 .profile-picture {
     width: 180px; /* Slightly increase profile picture size */
     height: 180px;
@@ -291,3 +288,39 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+.home-section {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('pictures/background-image-home.jpg') center/cover no-repeat; 
+    color: white;
+}
+
+.home-container h1 {
+    font-size: 3em; 
+    font-weight: bold;
+}
+
+.home-container .highlight {
+    color: #4A90E2; 
+}
+
+.job-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-description {
+    max-width: 70%; 
+    margin: 20px auto; 
+    text-align: center;
+    font-size: 1.2em; 
+    color: #444;
+    line-height: 1.6;
+}
+
