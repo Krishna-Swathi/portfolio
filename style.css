@@ -75,7 +75,10 @@ header nav ul li a:hover {
     max-width: 90%;
     margin: auto;
     padding: 30px;
-    text-align: left;
+}
+
+.about-container .profile-info {
+    text-align: justify; 
 }
 
 /* Section Styling */
@@ -429,7 +432,7 @@ a:hover {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: justity;
 }
 
 .profile-info h2 {
